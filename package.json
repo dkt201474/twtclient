@@ -18,6 +18,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "p": "GENERATE_SOURCEMAP=false react-scripts build && aws s3 sync build/ s3://dkttwitterchallenge --delete",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
