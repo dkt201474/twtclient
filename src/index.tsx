@@ -8,10 +8,10 @@ import { Provider } from 'react-redux';
 import { persistor, store } from './models/store';
 import { __DEV__ } from './utils';
 
-if (__DEV__) {
-  const Reactotron = require('reactotron-react-js').default;
-  Reactotron.configure().connect();
-}
+// if (__DEV__) {
+//   const Reactotron = require('reactotron-react-js').default;
+//   Reactotron.configure().connect();
+// }
 
 ReactDOM.render(
   <React.StrictMode>
