@@ -7,8 +7,9 @@ import { Provider } from 'react-redux';
 import Reactotron from 'reactotron-react-js';
 
 import { persistor, store } from './models/store';
+import { __DEV__ } from './utils';
 
-Reactotron.configure().connect();
+__DEV__ && Reactotron.configure().connect();
 
 ReactDOM.render(
   <React.StrictMode>
